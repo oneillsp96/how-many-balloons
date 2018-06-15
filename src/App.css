@@ -8,8 +8,8 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: lightseagreen;
+  height: auto;
   padding: 20px;
   color: white;
 }
@@ -71,6 +71,72 @@ body { margin:20px; background:hsl(70, 31%, 85%); text-align:center; }
   content:"";
   background:rgba(0,0,0,0.2); 
 }
+
+.activeUnitButton{
+  
+ border-radius: 10px;
+ border-style: solid;
+ border-color: lightsalmon;
+ background-color: lightsalmon;
+ color: white;
+ height: 100%;
+
+ position: relative; 
+  /* padding: 0 0 0 0 */
+}
+.activeUnitButton:focus{
+  outline:none;
+}
+
+.inactiveUnitButton{
+ border-radius: 10px;
+ border-style: none;
+ background-color: transparent;
+ color: white;
+ /* border-color: white;
+ border-right-color: transparent; */
+}
+.inactiveUnitButton:focus{
+  outline:none;
+}
+
+#unitSwitchContainer{
+  display: inline-block;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: white;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  margin:1em;
+}
+
+#weightInput:focus{
+  outline:none;
+}
+#weightInput{
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin:1em;
+}
+
+#weightSubmit{
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+}
+#weightSubmit:focus{
+outline:none;
+}
+
 
 .balloon:nth-child(2){ background:hsl(245,40%,65%); animation-duration:3.5s; }
 .balloon:nth-child(2):before { color:hsl(245,40%,65%);  }
